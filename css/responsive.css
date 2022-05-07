@@ -1,28 +1,28 @@
 @media screen and (min-width: 576px) and (max-width: 767px) {
     /* header */
 
+
     /* main */
     .container,
     .sidebar {
         margin: 10px;
     }
 
-    .content form {
+    .form {
         margin: 0 auto;
         width: 400px;
     }
 
-    /* footer */
 
-    ..footer {
-        grid-template: "footer__copyright icons"/ 1fr 1fr;
+    /* footer */
+    .footer {
+        grid-template: "copyright icons"/ 1fr 1fr;
     }
 }
 
 @media screen and (min-width:768px) and (max-width: 1024px) {
 
     /* header */
-
     .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
@@ -54,8 +54,8 @@
         width: 60vw;
     }
 
-    /* main */
 
+    /* main */
     .main {
         grid-template: "container container sidebar"
             "container container ...."/ 1fr 1fr 1fr;
@@ -66,18 +66,16 @@
         margin: 10px;
     }
 
-    .content form {
+    .form {
         margin: 0 auto;
         width: 70%;
     }
 
 
     /* footer */
-
-    ..footer {
-        grid-template: "footer__copyright icons"/ 1fr 1fr;
+    .footer {
+        grid-template: "copyright icons"/ 1fr 1fr;
     }
-
 
     .footer__copyright p {
         font-size: 14px;
@@ -87,7 +85,6 @@
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
     /* header */
-
     .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
@@ -119,8 +116,8 @@
         width: 40vw;
     }
 
-    /* main */
 
+    /* main */
     .main {
         width: 80%;
         margin: 0 auto;
@@ -138,15 +135,15 @@
         font-size: 30px;
     }
 
-    .content form {
+    .form {
         margin: 0 auto;
         width: 60%;
     }
 
-    /* footer */
 
-    ..footer {
-        grid-template: "footer__copyright icons"/ 1fr 1fr;
+    /* footer */
+    .footer {
+        grid-template: "copyright icons"/ 1fr 1fr;
     }
 
     .footer__copyright p {
@@ -158,7 +155,6 @@
 @media screen and (min-width: 1441px) {
 
     /* header */
-
     .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
@@ -190,8 +186,8 @@
         width: 40vw;
     }
 
-    /* main */
 
+    /* main */
     .main {
         width: 60%;
         margin: 0 auto;
@@ -204,15 +200,15 @@
         margin: 10px;
     }
 
-    .content form {
+    .form {
         margin: 0 auto;
         width: 50%;
     }
 
-    /* footer */
 
-    ..footer {
-        grid-template: "footer__copyright icons"/ 1fr 1fr;
+    /* footer */
+    .footer {
+        grid-template: "copyright icons"/ 1fr 1fr;
     }
 
     .footer__copyright p {
