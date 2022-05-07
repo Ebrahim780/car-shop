@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="icon/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>فروشــگاه خودرو</title>
 </head>
 
 <body>
-    <header class="head">
-
-        <div class="logo">
+    <header class="header">
+        <div class="header__logo">
             <a href="index.html">
                 <img src="icon/logo.png" alt="logo">
             </a>
         </div>
 
-        <form method="get" class="search">
+        <form method="get" class="header__search">
             <input type="image" src="icon/search.svg" alt="Search" />
             <input type="search" placeholder="عبارت مورد نظر را وارد کنید" />
         </form>
 
-        <div class="menu">
+        <div class="header__menu">
             <img src="icon/Hamburger_icon.png" alt="menu" id="menu">
         </div>
 
-        <nav class="navigation" id="mobile">
-            <ul class="nav-list">
-                <li class="list-item close">
+        <nav class="header__navigation" id="mobile">
+            <ul class="header__list">
+                <li class="header__list__item close">
                     <img src="icon/close.svg" alt="close" id="close">
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="index.html">صفحه اصلی</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="signup.html">ثبت نام</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="login.html">ورود</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="product.html">محصولات</a>
                 </li>
-                <li class="list-item">
-                    <a href="shop.html">سبد خرید</a>
+                <li class="header__list__item">
+                    <a href="cart.html">سبد خرید</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="about.html">درباره ما</a>
                 </li>
-                <li class="list-item mode">
+                <li class="header__list__item mode">
                     <div>
                         <input id="check" type="checkbox">
                         <label id="click" for="check"></label>
@@ -58,35 +58,55 @@
                 </li>
             </ul>
         </nav>
-
     </header>
 
-        <main class="container">
-
-        <article class="part">
+    <main class="main">
+        <article class="container">
             <section class="content">
-                <h2 class="title-content"></h2>
+                <h2 class="content__title">تاریخچه فروشگاه</h2>
+                <p class="content__text">
+                    این فروشگاه در ابتدا کار خود را با فروش خودرو های دسته دوم در سال 1388 شروع کرد.
+                    اما امروز شاهد فروش انواع جدیدترین و بهترین خودرو های داخلی و خارجی در این فروشگاه هستیم.
+                    امیدواریم بتوانیم بهترین خدمات را به شما مشتریان ارائه بدهیم
+                </p>
             </section>
             <section class="content">
-                <h2 class="title-content"></h2>
+                <h2 class="content__title">خدمات پس از فروش</h2>
+                <div class="services">
+                    <h3 class="services__title">تعمیر و نگهداری</h3>
+                    <img src="icon/support.svg" alt="fix" class="services__image">
+                    <p class="services__text">
+                        شما پس از خرید از فروشگاه ما می توانید به مدت 3 ماه از خدمات تعمیر ما استفاده کنید
+                    </p>
+                </div>
+                <div class="services">
+                    <h3 class="services__title">ضمانت پس از فروش</h3>
+                    <img src="icon/guarantee.png" alt="guarantee" class="services__image">
+                    <p class="services__text">محصول شما پس از خرید دارای 18 ماه ضمانت پس از فروش می شود</p>
+                </div>
+                <div class="services">
+                    <h3 class="services__title">ضمانت بازگشت کالا</h3>
+                    <img src="icon/product.png" alt="return" class="services__image">
+                    <p class="services__text">
+                        شما می توانید به مدت 48 ساعت بعد از خرید محصول، درصورت وجود مشکل و ایراد در محصول، آن را بازگشت
+                        دهید.لازم به ذکر است درصورت بازگشت کالا، 5% وجه پرداختی به شما بازگردانده نمی شود
+                    </p>
+                </div>
             </section>
         </article>
 
-
-        <aside class="side">
+        <aside class="sidebar">
             <section class="content">
-                <h2 class="title-side"></h2>
+                <h2 class="content__title"></h2>
             </section>
         </aside>
-        
     </main>
 
-
-    <footer class="foot">
-        <div class="copyright">
+    <footer class="footer">
+        <div class="footer__copyright">
             <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به فروشگاه ماموت می باشد &copy;</p>
         </div>
-        <div class="footer-icon">
+        <div class="footer__icon">
             <a href="https://www.facebook.com">
                 <img src="icon/facebook.svg" alt="Facebook" class="icon" />
             </a>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 
 <head>
     <meta charset="utf-8">
@@ -10,47 +10,46 @@
 </head>
 
 <body>
-    <header class="head">
-
-        <div class="logo">
+    <header class="header">
+        <div class="header__logo">
             <a href="index.html">
                 <img src="icon/logo.png" alt="logo">
             </a>
         </div>
 
-        <form method="get" class="search">
+        <form method="get" class="header__search">
             <input type="image" src="icon/search.svg" alt="Search" />
             <input type="search" placeholder="عبارت مورد نظر را وارد کنید" />
         </form>
 
-        <div class="menu">
+        <div class="header__menu">
             <img src="icon/Hamburger_icon.png" alt="menu" id="menu">
         </div>
 
-        <nav class="navigation" id="mobile">
-            <ul class="nav-list">
-                <li class="list-item close">
+        <nav class="header__navigation" id="mobile">
+            <ul class="header__list">
+                <li class="header__list__item close">
                     <img src="icon/close.svg" alt="close" id="close">
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="index.html">صفحه اصلی</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="signup.html">ثبت نام</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="login.html">ورود</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="product.html">محصولات</a>
                 </li>
-                <li class="list-item">
-                    <a href="shop.html">سبد خرید</a>
+                <li class="header__list__item">
+                    <a href="cart.html">سبد خرید</a>
                 </li>
-                <li class="list-item">
+                <li class="header__list__item">
                     <a href="about.html">درباره ما</a>
                 </li>
-                <li class="list-item mode">
+                <li class="header__list__item mode">
                     <div>
                         <input id="check" type="checkbox">
                         <label id="click" for="check"></label>
@@ -58,53 +57,50 @@
                 </li>
             </ul>
         </nav>
-
     </header>
 
-        <main class="container">
-
-        <article class="part">
+    <main class="main">
+        <article class="container">
             <section class="content">
-                    <form action="">
-                        <div class="input-box">
-                            <input type="text" id="name"  placeholder="نام " onblur="checkValue(this,0)" required autofocus>
-                            <p class="tip"></p>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" id="Password"  placeholder="رمز عبور" onblur="checkValue(this,1)" required>
-                            <p class="tip"></p>
-                        </div>
-                        <div class="input-box">
-                            <input type="tel" id="Phone"  placeholder="تلفن" onblur="checkValue(this,2)" required>
-                            <p class="tip"></p>
-                        </div>
-                        <div class="input-box">
-                            <input type="email" id="Email"  placeholder="ایمیل" onblur="checkValue(this,3)" required>
-                            <p class="tip"></p>
-                        </div>
-                        <div class="input-box">
-                            <button type="submit" class="button form-button">ثبت نام</button>
-                        </div>
-                    </form>
+                <form action="">
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="نام " onblur="checkValue(this,0)" required autofocus>
+                        <p class="tip"></p>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="Password" placeholder="رمز عبور" onblur="checkValue(this,1)"
+                            required>
+                        <p class="tip"></p>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" id="Phone" placeholder="تلفن" onblur="checkValue(this,2)" required>
+                        <p class="tip"></p>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="Email" placeholder="ایمیل" onblur="checkValue(this,3)" required>
+                        <p class="tip"></p>
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" class="button form-button">ثبت نام</button>
+                    </div>
+                </form>
             </section>
-            
+
         </article>
 
-
-        <aside class="side">
+        <aside class="sidebar">
             <section class="content">
-                <h2 class="title-side"></h2>
+                <h2 class="content__title"></h2>
             </section>
         </aside>
-        
+
     </main>
 
-
-    <footer class="foot">
-        <div class="copyright">
+    <footer class="footer">
+        <div class="footer__copyright">
             <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به فروشگاه ماموت می باشد &copy;</p>
         </div>
-        <div class="footer-icon">
+        <div class="footer__icon">
             <a href="https://www.facebook.com">
                 <img src="icon/facebook.svg" alt="Facebook" class="icon" />
             </a>

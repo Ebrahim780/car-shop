@@ -2,8 +2,8 @@
     /* header */
 
     /* main */
-    .part,
-    .side {
+    .container,
+    .sidebar {
         margin: 10px;
     }
 
@@ -14,8 +14,8 @@
 
     /* footer */
 
-    .foot {
-        grid-template: "copyright icons"/ 1fr 1fr;
+    ..footer {
+        grid-template: "footer__copyright icons"/ 1fr 1fr;
     }
 }
 
@@ -23,30 +23,30 @@
 
     /* header */
 
-    .head {
+    .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
             "search search";
     }
 
-    .navigation {
+    .header__navigation {
         display: block;
         padding: 30px 10px;
     }
 
-    .nav-list {
+    .header__list {
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
     }
 
-    .list-mobile,
-    .menu,
+    .list__mobile,
+    .header__menu,
     .close {
         display: none;
     }
 
-    .logo img {
+    .header__logo img {
         width: 100px;
     }
 
@@ -56,13 +56,13 @@
 
     /* main */
 
-    .container {
-        grid-template: "part part sidebar"
-            "part part ...."/ 1fr 1fr 1fr;
+    .main {
+        grid-template: "container container sidebar"
+            "container container ...."/ 1fr 1fr 1fr;
     }
 
-    .part,
-    .side {
+    .container,
+    .sidebar {
         margin: 10px;
     }
 
@@ -74,12 +74,12 @@
 
     /* footer */
 
-    .foot {
-        grid-template: "copyright icons"/ 1fr 1fr;
+    ..footer {
+        grid-template: "footer__copyright icons"/ 1fr 1fr;
     }
 
 
-    .copyright p {
+    .footer__copyright p {
         font-size: 14px;
     }
 }
@@ -88,30 +88,30 @@
 
     /* header */
 
-    .head {
+    .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
             "search search";
     }
 
-    .navigation {
+    .header__navigation {
         display: block;
         padding: 30px 10px;
     }
 
-    .nav-list {
+    .header__list {
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
     }
 
-    .list-mobile,
-    .menu,
+    .list__mobile,
+    .header__menu,
     .close {
         display: none;
     }
 
-    .logo img {
+    .header__logo img {
         width: 120px;
     }
 
@@ -121,20 +121,20 @@
 
     /* main */
 
-    .container {
+    .main {
         width: 80%;
         margin: 0 auto;
-        grid-template: "part part sidebar"
-            "part part ...."/ 1fr 1fr 1fr;
+        grid-template: "container container sidebar"
+            "container container ...."/ 1fr 1fr 1fr;
 
     }
 
-    .part,
-    .side {
+    .container,
+    .sidebar {
         margin: 10px;
     }
 
-    .title-content {
+    .content__title {
         font-size: 30px;
     }
 
@@ -145,11 +145,11 @@
 
     /* footer */
 
-    .foot {
-        grid-template: "copyright icons"/ 1fr 1fr;
+    ..footer {
+        grid-template: "footer__copyright icons"/ 1fr 1fr;
     }
 
-    .copyright p {
+    .footer__copyright p {
         font-size: 20px;
     }
 }
@@ -159,30 +159,30 @@
 
     /* header */
 
-    .head {
+    .header {
         grid-template-columns: 7fr 1fr;
         grid-template-areas: "list  logo"
             "search search";
     }
 
-    .navigation {
+    .header__navigation {
         display: block;
         padding: 30px 10px;
     }
 
-    .nav-list {
+    .header__list {
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
     }
 
-    .list-mobile,
-    .menu,
+    .list__mobile,
+    .header__menu,
     .close {
         display: none;
     }
 
-    .logo img {
+    .header__logo img {
         width: 100px;
     }
 
@@ -192,15 +192,15 @@
 
     /* main */
 
-    .container {
+    .main {
         width: 60%;
         margin: 0 auto;
-        grid-template: "part part sidebar"
-            "part part ...."/ 1fr 1fr 1fr;
+        grid-template: "container container sidebar"
+            "container container ...."/ 1fr 1fr 1fr;
     }
 
-    .part,
-    .side {
+    .container,
+    .sidebar {
         margin: 10px;
     }
 
@@ -211,11 +211,11 @@
 
     /* footer */
 
-    .foot {
-        grid-template: "copyright icons"/ 1fr 1fr;
+    ..footer {
+        grid-template: "footer__copyright icons"/ 1fr 1fr;
     }
 
-    .copyright p {
+    .footer__copyright p {
         font-size: 30px;
     }
 }
