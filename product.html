@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" href="icon/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>فروشــگاه خودرو</title>
@@ -15,20 +15,20 @@
     <header class="header">
         <div class="header__logo">
             <a href="index.html">
-                <img src="icon/logo.png" alt="logo">
+                <img src="icon/logo.png" alt="logo" class="header__logo__image">
             </a>
         </div>
 
         <form method="get" class="header__search">
-            <input type="image" src="icon/search.svg" alt="Search" />
-            <input type="search" placeholder="عبارت مورد نظر را وارد کنید" />
+            <input type="image" src="icon/search.svg" alt="Search" class="header__search__icon" />
+            <input type="search" placeholder="عبارت مورد نظر را وارد کنید" class="header__search__bar" />
         </form>
 
         <div class="header__menu">
-            <img src="icon/Hamburger_icon.png" alt="menu" id="menu">
+            <img src="icon/Hamburger_icon.png" alt="menu" class="header__menu__image">
         </div>
 
-        <nav class="header__navigation" id="mobile">
+        <nav class="header__navigation">
             <ul class="header__list">
                 <li class="header__list__item close">
                     <img src="icon/close.svg" alt="close" id="close">
@@ -43,16 +43,11 @@
                     <a href="product.html">محصولات</a>
                 </li>
                 <li class="header__list__item">
-                    <a href="cart.html">سبد خرید</a>
-                </li>
-                <li class="header__list__item">
                     <a href="about.html">درباره ما</a>
                 </li>
-                <li class="header__list__item mode">
-                    <div>
-                        <input id="check" type="checkservice">
-                        <label id="click" for="check"></label>
-                    </div>
+                <li class="header__list__item">
+                    <input id="check" type="checkbox">
+                    <label class="mode__click" for="check"></label>
                 </li>
             </ul>
         </nav>

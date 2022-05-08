@@ -4,13 +4,7 @@
   background: linear-gradient(120deg, #b3babdb0, #c7c3c3);
 }
 
-.tip {
-  color: orangered;
-  margin-top: 5px;
-  font-size: 12px;
-}
-
-.form-button {
+.form__button {
   background: #fff;
   color: #808080;
 }
