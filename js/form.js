@@ -1,7 +1,9 @@
 const login = document.querySelector('.login')
 const signup = document.querySelector('.signup')
+const form = document.querySelector('.form')
+const inputs = form.querySelectorAll('input')
 
-const disableBox = (show, hide) => {
+const switchForm = (show, hide) => {
     let boxes = document.querySelectorAll('.form__box')
     for (let i = 2; i < boxes.length - 1; i++) {
         boxes[i].classList.toggle('hidden')
@@ -10,5 +12,16 @@ const disableBox = (show, hide) => {
     hide.classList.toggle('active')
 }
 
-login.addEventListener('click',() => disableBox(login, signup))
-signup.addEventListener('click', () => disableBox(signup, login))
+const formValidator = element => {
+    if (element.value.trim() == '')
+        element.classList.add('danger')
+    else
+        element.classList.remove('danger')
+}
+
+login.addEventListener('click', () => switchForm(login, signup))
+signup.addEventListener('click', () => switchForm(signup, login))
+
+for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('blur', () => formValidator(inputs[i]))
+}

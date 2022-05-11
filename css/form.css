@@ -81,3 +81,7 @@
 .hidden {
   display: none;
 }
+
+.danger {
+  border: 1px solid crimson !important;
+}
