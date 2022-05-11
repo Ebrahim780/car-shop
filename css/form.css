@@ -1,10 +1,83 @@
+.container__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  color: gray;
+}
+
 .form {
-  padding: 40px 10px;
-  border-radius: 10px;
-  background: linear-gradient(120deg, #b3babdb0, #c7c3c3);
+  width: 500px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.form__switch {
+  width: 50%;
+  height: 100%;
+  transition: .3s;
+  padding-top: 15px;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px rgba(94, 104, 121, 0.3);
+}
+
+.form__switch:hover {
+  cursor: pointer;
+}
+
+.form__switch:active,
+.form__switch:focus {
+  box-shadow: inset 3px 3px 5px rgba(94, 104, 121, 0.3);
+}
+
+.form__switch.active {
+  color: #005169;
+  box-shadow: inset 3px 3px 5px rgba(94, 104, 121, 0.3);
+}
+
+.form__box {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px !important;
+  position: relative;
+  margin: 0 auto;
+}
+
+.form__box__input {
+  background-color: #efefef;
+  border-radius: 5px;
+  padding: 10px 50px 10px 10px;
+  width: 100%;
+  text-align: right !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 3px 1px -2px rgba(0, 0, 0, 0.12),
+  0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form__box__icon {
+  height: 50%;
+  position: absolute;
+  right: 10px;
 }
 
 .form__button {
-  background: #fff;
-  color: #808080;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
 }

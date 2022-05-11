@@ -1,4 +1,11 @@
+@media screen and (max-width: 575px) {
+    .form {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
+
     /* main */
     .container,
     .sidebar {
@@ -6,7 +13,8 @@
     }
 
     .form {
-        width: 400px;
+        width: 90%;
+        margin: 20px auto;
     }
 
 
@@ -17,6 +25,7 @@
 }
 
 @media screen and (min-width:768px) and (max-width: 1024px) {
+
     /* header */
     .header {
         grid-template-columns: 7fr 1fr;
@@ -62,7 +71,7 @@
     }
 
     .form {
-        width: 70%;
+        margin: 30px auto;
     }
 
 
@@ -77,6 +86,7 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
     /* header */
     .header {
         grid-template-columns: 7fr 1fr;
@@ -128,10 +138,6 @@
         font-size: 30px;
     }
 
-    .form {
-        width: 60%;
-    }
-
 
     /* footer */
     .footer {
@@ -145,6 +151,7 @@
 
 
 @media screen and (min-width: 1441px) {
+
     /* header */
     .header {
         grid-template-columns: 7fr 1fr;
@@ -189,10 +196,6 @@
     .container,
     .sidebar {
         margin: 10px;
-    }
-
-    .form {
-        width: 50%;
     }
 
 
