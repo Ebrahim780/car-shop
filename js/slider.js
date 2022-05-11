@@ -1,35 +1,29 @@
-var slideIndex = 0;
-showSlides(slideIndex);
+let slideIndex = 1
+showSlides(slideIndex)
 
-function plusSlides(value) {
-  showSlides(slideIndex += value);
+function plusSlides(index) {
+  showSlides(slideIndex += index)
 }
 
-function currentSlide(value) {
-  showSlides(slideIndex = value);
+function currentSlide(index) {
+  showSlides(slideIndex = index)
 }
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+function showSlides(index) {
+  let i
+  let slides = document.getElementsByClassName('slide')
+  let dots = document.getElementsByClassName('dot')
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+  if (index > slides.length) slideIndex = 1
 
-  slideIndex++;
+  if (index < 1) slideIndex = slides.length
 
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  }
+  for (i = 0; i < slides.length; i++) 
+    slides[i].style.display = 'none'
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  for (i = 0; i < dots.length; i++)
+    dots[i].className = dots[i].className.replace(' active', '')
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' active'
 }
-
-setInterval(showSlides, 7000);
