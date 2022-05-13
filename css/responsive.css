@@ -45,8 +45,7 @@
     }
 
     .list__mobile,
-    .header__menu,
-    .close {
+    .header__menu {
         display: none;
     }
 
@@ -106,8 +105,7 @@
     }
 
     .list__mobile,
-    .header__menu,
-    .close {
+    .header__menu {
         display: none;
     }
 
@@ -171,8 +169,7 @@
     }
 
     .list__mobile,
-    .header__menu,
-    .close {
+    .header__menu {
         display: none;
     }
 

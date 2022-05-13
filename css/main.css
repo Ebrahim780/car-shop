@@ -132,18 +132,30 @@ textarea {
     width: 100%;
 }
 
-.header__navigation {
+.back__drop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: block !important;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__navigation,
+.header__fade {
     display: none;
 }
 
 .list__mobile {
     width: 250px;
     height: 100vh;
-    background-color: rgba(14, 14, 14, 0.95);
     position: fixed;
     right: 0px;
     z-index: 10;
     animation: show 0.3s linear !important;
+    background-color: rgba(14, 14, 14, 0.9);
 }
 
 .header__list {
@@ -168,17 +180,6 @@ textarea {
 .header__list a:focus {
     color: #fae100;
     border-bottom: 1px solid;
-}
-
-#close {
-    width: 30px;
-    cursor: pointer;
-    filter: invert(1);
-    transition: .3s;
-}
-
-#close:active {
-    transform: scale(0.9);
 }
 
 /* main */
