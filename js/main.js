@@ -14,6 +14,12 @@ fade.onclick = () => {
 }
 
 check.onclick = () => {
-    document.querySelector('.container').classList.toggle('dark')
-    document.querySelector('.sidebar').classList.toggle('dark')
+    let lights = document.querySelectorAll('.light')
+    let lightens = document.querySelectorAll('.lighten')
+
+    for (i = 0; i < lights.length; i++)
+        lights[i].classList.toggle('dark')
+
+    for (i = 0; i < lightens.length; i++)
+        lightens[i].classList.toggle('darken')
 }
