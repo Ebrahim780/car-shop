@@ -55,13 +55,38 @@
         <article class="container light">
             <section class="content">
                 <h2 class="content__title">لیست محصولات</h2>
-                <div class="products"></div>
             </section>
         </article>
 
         <aside class="sidebar light">
             <section class="content">
-                <h2 class="content__title"></h2>
+                <h2 class="content__title">فیلتر بر اساس</h2>
+                <select class="filter">
+                    <option class="filter__option">نوع</option>
+                    <option value="لوکس" class="filter__option">لوکس</option>
+                    <option value="اسپرت" class="filter__option">اسپرت</option>
+                    <option value="کلاسیک" class="filter__option">کلاسیک</option>
+                    <option value="رالی" class="filter__option">رالی</option>
+                    <option value="شخصی" class="filter__option">شخصی</option>
+                </select>
+                <div class="filter__box">
+                    <label for="new">نو</label>
+                    <input type="radio" class="filter__radio" value="نو" name="status" id="new" />
+                    <label for="used">کارکرده</label>
+                    <input type="radio" class="filter__radio" value="کارکرده" name="status" id="used" />
+                </div>
+                <div class="filter__box">
+                    <input type="text" class="filter__input" placeholder="از سال" />
+                    <input type="text" class="filter__input" placeholder="تا سال" />
+                </div>
+                <div class="filter__box">
+                    <label for="adoptive">حذف توافقی ها</label>
+                    <input type="checkbox" class="filter__check" value="توافقی" id="adoptive" />
+                </div>
+                <div class="filter__box">
+                    <label for="available">فقط کالا های موجود</label>
+                    <input type="checkbox" class="filter__check" id="available" />
+                </div>
             </section>
         </aside>
     </main>

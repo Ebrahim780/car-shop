@@ -2,6 +2,14 @@
     .form {
         width: 100%;
     }
+
+    .product {
+        width: 90%;
+    }
+
+    .product__image {
+        height: 250px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -15,6 +23,10 @@
     .form {
         width: 90%;
         margin: 20px auto;
+    }
+
+    .product {
+        width: 45%;
     }
 
 

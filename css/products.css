@@ -30,3 +30,90 @@
   margin-bottom: 5px;
   padding: 0 15px;
 }
+
+
+/* filter */
+.filter {
+  width: 80%;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #005169;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 30%);
+  margin-bottom: 30px;
+}
+
+.filter__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.filter__input {
+  background: #efefef;
+  width: 45%;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #eee;
+}
+
+.filter__option {
+  background: #006280;
+}
+
+.filter__option::after {
+  background: #005169 !important;
+}
+
+.filter__option:first-child {
+  display: none;
+}
+
+.filter__radio,
+.filter__check {
+  width: 17px;
+  height: 17px;
+  transition: .1s;
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  color: #005169;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.filter__radio::before,
+.filter__check::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px #005169;
+}
+
+.filter__radio:checked,
+.filter__check:checked {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  color: #005169;
+  display: grid;
+  place-content: center;
+}
+
+.filter__check {
+  appearance: none;
+  border-radius: 3px;
+}
+
+.filter__check::before {
+  border-radius: 2px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+/* .filter__check:checked {
+  outline: none;
+} */

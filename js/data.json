@@ -52,7 +52,7 @@
   {
     "id": "6",
     "url": "image/6.jpg",
-    "name": "Duesenberg j",
+    "name": "Duesenberg",
     "category": "کلاسیک",
     "available": false,
     "status": "کارکرده",
@@ -64,7 +64,7 @@
     "url": "image/7.jpg",
     "name": "Buick Super",
     "category": "کلاسیک",
-    "available": false,
+    "available": true,
     "status": "کارکرده",
     "year": "1954",
     "price": "740.000"
