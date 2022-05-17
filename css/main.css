@@ -225,8 +225,7 @@ h2.content__title {
     font-size: 2rem;
 }
 
-h3.content__title,
-.services__title {
+h3.content__title {
     margin: 20px auto;
     color: #00b1e7;
     font-size: 1.5rem;
