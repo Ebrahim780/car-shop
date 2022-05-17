@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" href="icon/public/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>نمایشگاه ماموت</title>
 </head>
@@ -57,35 +63,32 @@
                 </p>
             </section>
             <section class="content">
-                <h2 class="content__title">خدمات پس از فروش</h2>
-                <div class="services lighten">
-                    <h3 class="services__title">تعمیر و نگهداری</h3>
-                    <img src="icon/services/support.svg" alt="fix" class="services__image">
-                    <p class="services__text">
+                <div id="map"></div>
+            </section>
+            <h2 class="service__title">خدمات پس از فروش</h2>
+            <section class="content services">
+                <div class="service lighten">
+                    <h3 class="service__title">تعمیر و نگهداری</h3>
+                    <img src="icon/services/support.svg" alt="fix" class="service__image">
+                    <p class="service__text">
                         شما پس از خرید از نمایشگاه ما می توانید به مدت 3 ماه از خدمات تعمیر ما استفاده کنید
                     </p>
                 </div>
-                <div class="services lighten">
-                    <h3 class="services__title">ضمانت پس از فروش</h3>
-                    <img src="icon/services/guarantee.png" alt="guarantee" class="services__image">
-                    <p class="services__text">محصول شما پس از خرید دارای 18 ماه ضمانت پس از فروش می شود</p>
+                <div class="service lighten">
+                    <h3 class="service__title">ضمانت پس از فروش</h3>
+                    <img src="icon/services/guarantee.png" alt="guarantee" class="service__image">
+                    <p class="service__text">محصول شما پس از خرید دارای 18 ماه ضمانت پس از فروش می شود</p>
                 </div>
-                <div class="services lighten">
-                    <h3 class="services__title">ضمانت بازگشت کالا</h3>
-                    <img src="icon/services/product.png" alt="return" class="services__image">
-                    <p class="services__text">
+                <div class="service lighten">
+                    <h3 class="service__title">ضمانت بازگشت کالا</h3>
+                    <img src="icon/services/product.png" alt="return" class="service__image">
+                    <p class="service__text">
                         شما می توانید به مدت 48 ساعت بعد از خرید محصول، درصورت وجود مشکل و ایراد در محصول، آن را بازگشت
                         دهید.لازم به ذکر است درصورت بازگشت کالا، 5% وجه پرداختی به شما بازگردانده نمی شود
                     </p>
                 </div>
             </section>
         </article>
-
-        <aside class="sidebar light">
-            <section class="content">
-                <h2 class="content__title"></h2>
-            </section>
-        </aside>
     </main>
 
     <footer class="footer">
@@ -109,6 +112,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
