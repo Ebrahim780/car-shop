@@ -1,3 +1,8 @@
+.main {
+  grid-template: 'sidebar''container' / 1fr
+}
+
+/* products */
 .products {
   display: flex;
   align-items: center;
@@ -77,7 +82,7 @@
 .filter__check {
   width: 17px;
   height: 17px;
-  transition: .1s;
+  transition: .105s;
   cursor: pointer;
   appearance: none;
   background-color: #fff;
@@ -97,11 +102,15 @@
 
 .filter__radio:checked,
 .filter__check:checked {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
   color: #005169;
   display: grid;
   place-content: center;
+}
+
+.filter__radio:focus,
+.filter__check:focus {
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
 }
 
 .filter__check {

@@ -16,7 +16,6 @@ const filterProducts = (value, key) => {
       switch (key) {
         case 'category':
           filteredValue = products.filter(product => product.category === value)
-          console.log(filteredValue)
           break
 
         case 'status':
@@ -33,7 +32,6 @@ const filterProducts = (value, key) => {
 
         case 'noneAdopted':
           filteredValue = products.filter(product => product.price != value)
-          console.log(value)
           break
 
         case 'available':
@@ -71,7 +69,7 @@ const filterProducts = (value, key) => {
           </div>
           <div class='product__content'>
             <span>موجود: </span>
-            <span>${product.available ? '✔' : '❌'}</span>
+            <span>${product.available ? '✅' : '❌'}</span>
           </div>
           <button class='button'>سفارش</button>
         </div>
