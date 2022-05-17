@@ -1,4 +1,2 @@
-# car-shop
-car shop project repository
-
-this project created only for github hosting test
+# Mamooth Shop
+## Mamooth Shop project repository Paas

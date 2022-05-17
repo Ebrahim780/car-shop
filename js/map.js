@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
 
 L.marker(address, { icon }).addTo(map)
   .bindPopup('جاده قدیم نیشابور، معاینه فنی رباط طرق، روبروی ابریشم 7، نمایشگاه ماموت')
-// .openPopup()
+.openPopup()
 
 let leafetLink = document.querySelector('.leaflet-control-attribution')
 leafetLink.remove()

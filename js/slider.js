@@ -18,7 +18,7 @@ function showSlides(index) {
 
   if (index < 1) slideIndex = slides.length
 
-  for (i = 0; i < slides.length; i++) 
+  for (i = 0; i < slides.length; i++)
     slides[i].style.display = 'none'
 
   for (i = 0; i < dots.length; i++)
