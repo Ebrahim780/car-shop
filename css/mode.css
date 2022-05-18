@@ -10,7 +10,7 @@
 
 .form__switch.active.dark {
     box-shadow: 3px 3px 3px inset #444;
-    color: orange;
+    color: #00b1e7;
 }
 
 #check {

@@ -10,6 +10,11 @@
     .product__image {
         height: 250px;
     }
+
+    .map {
+        width: 100% !important;
+        margin: 0 5px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -215,5 +220,18 @@
 
     .footer__copyright p {
         font-size: 30px;
+    }
+}
+
+/* slider */
+@media screen and (min-width: 1024px) {
+    .slide__image {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .slide__image {
+        height: 500px;
     }
 }
