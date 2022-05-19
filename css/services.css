@@ -1,5 +1,5 @@
 .main {
-  grid-template: none !important;
+  grid-template: 'container' / 1fr  !important;
 }
 
 .services {

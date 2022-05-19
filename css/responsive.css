@@ -162,6 +162,12 @@
     .footer__copyright p {
         font-size: 20px;
     }
+
+
+    /* form */
+    .login__form {
+        transform: scale(1.4)
+    }
 }
 
 
@@ -220,6 +226,12 @@
 
     .footer__copyright p {
         font-size: 30px;
+    }
+
+    
+    /* form */
+    .login__form {
+        transform: scale(1.8)
     }
 }
 
