@@ -3,26 +3,26 @@ const mobile = document.querySelector('.header__navigation')
 const check = document.getElementById('check')
 const fade = document.querySelector('.header__fade')
 
-mode = false
-modeStatus = JSON.parse(localStorage.getItem('mode'))
+let modeStatus = JSON.parse(localStorage.getItem('mode'))
 
 const changeMode = () => {
-    let lights = document.querySelectorAll('.light')
-    let lightens = document.querySelectorAll('.lighten')
+  let lights = document.querySelectorAll('.light')
+  let lightens = document.querySelectorAll('.lighten')
+  let mode = false
 
-    for (i = 0; i < lights.length; i++)
-        lights[i].classList.toggle('dark')
+  for (let light of lights)
+    light.classList.toggle('dark')
 
-    for (i = 0; i < lightens.length; i++)
-        lightens[i].classList.toggle('darken')
+  for (let lighten of lightens)
+    lighten.classList.toggle('darken')
 
-    mode = !mode
-    localStorage.setItem('mode', JSON.stringify(mode))
+  mode = !mode
+  localStorage.setItem('mode', JSON.stringify(mode))
 }
 
 if (modeStatus) {
-    check.click()
-    changeMode()
+  check.click()
+  changeMode()
 }
 
 check.onclick = changeMode
@@ -30,13 +30,13 @@ check.onclick = changeMode
 
 // show menu
 menu.onclick = () => {
-    mobile.setAttribute('class', 'list__mobile')
-    fade.classList.add('back__drop')
+  mobile.setAttribute('class', 'list__mobile')
+  fade.classList.add('back__drop')
 }
 
 
 // hide menu
 fade.onclick = () => {
-    mobile.setAttribute('class', 'header__navigation')
-    fade.classList.remove('back__drop')
+  mobile.setAttribute('class', 'header__navigation')
+  fade.classList.remove('back__drop')
 }

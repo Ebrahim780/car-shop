@@ -2,120 +2,120 @@
 <html lang="fa">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/services.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="icon" href="icon/public/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-        crossorigin=""></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>نمایشگاه ماموت</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="icon/public/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>نمایشگاه ماموت</title>
 </head>
 
 <body class="lighten">
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
-            </a>
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
+      </a>
+    </div>
+
+    <div class="header__menu">
+      <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
+    </div>
+
+    <div class="header__fade"></div>
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="index.html">صفحه اصلی</a>
+        </li>
+        <li class="header__list__item">
+          <a href="login.html">ورود / ثبت نام</a>
+        </li>
+        <li class="header__list__item">
+          <a href="products.html">محصولات</a>
+        </li>
+        <li class="header__list__item">
+          <a href="about.html">درباره ما</a>
+        </li>
+        <li class="header__list__item">
+          <input id="check" type="checkbox">
+          <label class="mode__click" for="check"></label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="container light">
+      <section class="content">
+        <h2 class="content__title">تاریخچه نمایشگاه ماموت</h2>
+        <p class="content__text">
+          این نمایشگاه در ابتدا کار خود را با فروش خودرو های دسته دوم در سال 1388 شروع کرد.
+          اما امروز شاهد فروش انواع جدیدترین و بهترین خودرو های داخلی و خارجی در این نمایشگاه هستیم.
+          امیدواریم بتوانیم بهترین خدمات را به شما مشتریان ارائه بدهیم
+        </p>
+      </section>
+      <section class="content">
+        <h2 class="content__title">آدرس نمایشگاه</h2>
+        <div id="map" class="map"></div>
+      </section>
+      <section class="content">
+        <h2 class="content__title">خدمات پس از فروش</h2>
+        <div class="services">
+          <div class="service lighten">
+            <h3 class="service__title">تعمیر و نگهداری</h3>
+            <img src="icon/services/support.svg" alt="fix" class="service__image">
+            <p class="service__text">
+              شما پس از خرید از نمایشگاه ما می توانید به مدت 3 ماه از خدمات تعمیر ما استفاده کنید
+            </p>
+          </div>
+          <div class="service lighten">
+            <h3 class="service__title">ضمانت پس از فروش</h3>
+            <img src="icon/services/guarantee.png" alt="guarantee" class="service__image">
+            <p class="service__text">محصول شما پس از خرید دارای 18 ماه ضمانت پس از فروش می شود</p>
+          </div>
+          <div class="service lighten">
+            <h3 class="service__title">ضمانت بازگشت کالا</h3>
+            <img src="icon/services/product.png" alt="return" class="service__image">
+            <p class="service__text">
+              شما می توانید به مدت 48 ساعت بعد از خرید محصول، درصورت وجود مشکل و ایراد در محصول، آن را بازگشت
+              دهید.لازم به ذکر است درصورت بازگشت کالا، 5% وجه پرداختی به شما بازگردانده نمی شود
+            </p>
+          </div>
         </div>
+      </section>
+    </article>
+  </main>
 
-        <div class="header__menu">
-            <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
-        </div>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
+    </div>
+    <div class="footer__icon">
+      <a href="https://github.com/EbrahimHeydari" title="GitHub">
+        <img src="icon/links/github.svg" alt="Git hub" class="icon" />
+      </a>
+      <a href="https://t.me/Heydari_2023" title="Telegram">
+        <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
+      </a>
+      <a href="https://www.linkedin.com" title="Linkedin">
+        <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
+      </a>
+      <a href="https://www.youtube.com" title="Youtube">
+        <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
+      </a>
+    </div>
+  </footer>
 
-        <div class="header__fade"></div>
-        <nav class="header__navigation">
-            <ul class="header__list">
-                <li class="header__list__item">
-                    <a href="index.html">صفحه اصلی</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="login.html">ورود / ثبت نام</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="products.html">محصولات</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="about.html">درباره ما</a>
-                </li>
-                <li class="header__list__item">
-                    <input id="check" type="checkbox">
-                    <label class="mode__click" for="check"></label>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <article class="container light">
-            <section class="content">
-                <h2 class="content__title">تاریخچه نمایشگاه ماموت</h2>
-                <p class="content__text">
-                    این نمایشگاه در ابتدا کار خود را با فروش خودرو های دسته دوم در سال 1388 شروع کرد.
-                    اما امروز شاهد فروش انواع جدیدترین و بهترین خودرو های داخلی و خارجی در این نمایشگاه هستیم.
-                    امیدواریم بتوانیم بهترین خدمات را به شما مشتریان ارائه بدهیم
-                </p>
-            </section>
-            <section class="content">
-                <h2 class="content__title">آدرس نمایشگاه</h2>
-                <div id="map" class="map"></div>
-            </section>
-            <section class="content">
-                <h2 class="content__title">خدمات پس از فروش</h2>
-                <div class="services">
-                    <div class="service lighten">
-                        <h3 class="service__title">تعمیر و نگهداری</h3>
-                        <img src="icon/services/support.svg" alt="fix" class="service__image">
-                        <p class="service__text">
-                            شما پس از خرید از نمایشگاه ما می توانید به مدت 3 ماه از خدمات تعمیر ما استفاده کنید
-                        </p>
-                    </div>
-                    <div class="service lighten">
-                        <h3 class="service__title">ضمانت پس از فروش</h3>
-                        <img src="icon/services/guarantee.png" alt="guarantee" class="service__image">
-                        <p class="service__text">محصول شما پس از خرید دارای 18 ماه ضمانت پس از فروش می شود</p>
-                    </div>
-                    <div class="service lighten">
-                        <h3 class="service__title">ضمانت بازگشت کالا</h3>
-                        <img src="icon/services/product.png" alt="return" class="service__image">
-                        <p class="service__text">
-                            شما می توانید به مدت 48 ساعت بعد از خرید محصول، درصورت وجود مشکل و ایراد در محصول، آن را بازگشت
-                            دهید.لازم به ذکر است درصورت بازگشت کالا، 5% وجه پرداختی به شما بازگردانده نمی شود
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__copyright">
-            <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
-        </div>
-        <div class="footer__icon">
-            <a href="https://github.com/EbrahimHeydari" title="GitHub">
-                <img src="icon/links/github.svg" alt="Git hub" class="icon" />
-            </a>
-            <a href="https://t.me/Heydari_2023" title="Telegram">
-                <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
-            </a>
-            <a href="https://www.linkedin.com" title="Linkedin">
-                <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
-            </a>
-            <a href="https://www.youtube.com" title="Youtube">
-                <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
-            </a>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

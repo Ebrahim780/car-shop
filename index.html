@@ -2,135 +2,135 @@
 <html lang="fa">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="icon" href="icon/public/favicon.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>نمایشگاه ماموت</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="icon/public/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>نمایشگاه ماموت</title>
 </head>
 
 <body class="lighten">
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
-            </a>
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
+      </a>
+    </div>
+
+    <form method="get" class="header__search">
+      <input type="image" src="icon/public/search.svg" alt="Search" class="header__search__icon" />
+      <input type="search" placeholder="عبارت مورد نظر را وارد کنید" class="header__search__bar" />
+    </form>
+
+    <div class="header__menu">
+      <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
+    </div>
+
+    <div class="header__fade"></div>
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="index.html">صفحه اصلی</a>
+        </li>
+        <li class="header__list__item">
+          <a href="login.html">ورود / ثبت نام</a>
+        </li>
+        <li class="header__list__item">
+          <a href="products.html">محصولات</a>
+        </li>
+        <li class="header__list__item">
+          <a href="about.html">درباره ما</a>
+        </li>
+        <li class="header__list__item">
+          <input id="check" type="checkbox">
+          <label class="mode__click" for="check"></label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="container light">
+      <section class="content">
+        <h2 class="content__title">برترین محصولات ما</h2>
+        <div class="slideshow">
+          <div class="slide fade">
+            <div class="slide__title">1 / 5</div>
+            <img class="slide__image" src="image/28.jpg">
+            <div class="slide__name">Honda SI 630</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__title">2 / 5</div>
+            <img class="slide__image" src="image/2.jpg">
+            <div class="slide__name">2014 camaro ss headlights</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__title">3 / 5</div>
+            <img class="slide__image" src="image/3.jpg">
+            <div class="slide__name">chevrolet corvette c7</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__title">4 / 5</div>
+            <img class="slide__image" src="image/10.jpg">
+            <div class="slide__name">2019 Bentley Continental GT</div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slide__title">5 / 5</div>
+            <img class="slide__image" src="image/9.jpg">
+            <div class="slide__name">Lamborghini Aventador</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
         </div>
+      </section>
+    </article>
 
-        <form method="get" class="header__search">
-            <input type="image" src="icon/public/search.svg" alt="Search" class="header__search__icon" />
-            <input type="search" placeholder="عبارت مورد نظر را وارد کنید" class="header__search__bar" />
-        </form>
+    <aside class="sidebar light">
+      <section class="content">
+        <h2 class="content__title"></h2>
+      </section>
+    </aside>
+  </main>
 
-        <div class="header__menu">
-            <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
-        </div>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
+    </div>
+    <div class="footer__icon">
+      <a href="https://github.com/EbrahimHeydari" title="GitHub">
+        <img src="icon/links/github.svg" alt="Git hub" class="icon" />
+      </a>
+      <a href="https://t.me/Heydari_2023" title="Telegram">
+        <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
+      </a>
+      <a href="https://www.linkedin.com" title="Linkedin">
+        <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
+      </a>
+      <a href="https://www.youtube.com" title="Youtube">
+        <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
+      </a>
+    </div>
+  </footer>
 
-        <div class="header__fade"></div>
-        <nav class="header__navigation">
-            <ul class="header__list">
-                <li class="header__list__item">
-                    <a href="index.html">صفحه اصلی</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="login.html">ورود / ثبت نام</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="products.html">محصولات</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="about.html">درباره ما</a>
-                </li>
-                <li class="header__list__item">
-                    <input id="check" type="checkbox">
-                    <label class="mode__click" for="check"></label>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <article class="container light">
-            <section class="content">
-                <h2 class="content__title">برترین محصولات ما</h2>
-                <div class="slideshow">
-                    <div class="slide fade">
-                        <div class="slide__title">1 / 5</div>
-                        <img class="slide__image" src="image/28.jpg">
-                        <div class="slide__name">Honda SI 630</div>
-                    </div>
-
-                    <div class="slide fade">
-                        <div class="slide__title">2 / 5</div>
-                        <img class="slide__image" src="image/2.jpg">
-                        <div class="slide__name">2014 camaro ss headlights</div>
-                    </div>
-
-                    <div class="slide fade">
-                        <div class="slide__title">3 / 5</div>
-                        <img class="slide__image" src="image/3.jpg">
-                        <div class="slide__name">chevrolet corvette c7</div>
-                    </div>
-
-                    <div class="slide fade">
-                        <div class="slide__title">4 / 5</div>
-                        <img class="slide__image" src="image/10.jpg">
-                        <div class="slide__name">2019 Bentley Continental GT</div>
-                    </div>
-
-                    <div class="slide fade">
-                        <div class="slide__title">5 / 5</div>
-                        <img class="slide__image" src="image/9.jpg">
-                        <div class="slide__name">Lamborghini Aventador</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-
-                    <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                    </div>
-                </div>
-            </section>
-        </article>
-
-        <aside class="sidebar light">
-            <section class="content">
-                <h2 class="content__title"></h2>
-            </section>
-        </aside>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__copyright">
-            <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
-        </div>
-        <div class="footer__icon">
-            <a href="https://github.com/EbrahimHeydari" title="GitHub">
-                <img src="icon/links/github.svg" alt="Git hub" class="icon" />
-            </a>
-            <a href="https://t.me/Heydari_2023" title="Telegram">
-                <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
-            </a>
-            <a href="https://www.linkedin.com" title="Linkedin">
-                <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
-            </a>
-            <a href="https://www.youtube.com" title="Youtube">
-                <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
-            </a>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
-    <script>
-    </script>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script>
+  </script>
 </body>
 
 </html>

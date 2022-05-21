@@ -2,117 +2,117 @@
 <html lang="fa">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/products.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="icon" href="icon/public/favicon.png" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>نمایشگاه ماموت</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="icon/public/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>نمایشگاه ماموت</title>
 </head>
 
 <body class="lighten">
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
-            </a>
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="icon/public/logo.png" alt="logo" class="header__logo__image">
+      </a>
+    </div>
+
+    <form method="get" class="header__search">
+      <input type="image" src="icon/public/search.svg" alt="Search" class="header__search__icon" />
+      <input type="search" placeholder="عبارت مورد نظر را وارد کنید" class="header__search__bar" />
+    </form>
+
+    <div class="header__menu">
+      <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
+    </div>
+
+    <div class="header__fade"></div>
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="index.html">صفحه اصلی</a>
+        </li>
+        <li class="header__list__item">
+          <a href="login.html">ورود / ثبت نام</a>
+        </li>
+        <li class="header__list__item">
+          <a href="products.html">محصولات</a>
+        </li>
+        <li class="header__list__item">
+          <a href="about.html">درباره ما</a>
+        </li>
+        <li class="header__list__item">
+          <input id="check" type="checkbox">
+          <label class="mode__click" for="check"></label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="container light">
+      <section class="content">
+        <h2 class="content__title">لیست محصولات</h2>
+      </section>
+    </article>
+
+    <aside class="sidebar light">
+      <section class="content">
+        <h2 class="content__title">فیلتر بر اساس</h2>
+        <select class="filter">
+          <option class="filter__option">نوع</option>
+          <option value="لوکس" class="filter__option">لوکس</option>
+          <option value="اسپرت" class="filter__option">اسپرت</option>
+          <option value="کلاسیک" class="filter__option">کلاسیک</option>
+          <option value="رالی" class="filter__option">رالی</option>
+          <option value="شخصی" class="filter__option">شخصی</option>
+        </select>
+        <div class="filter__box">
+          <label for="new">نو</label>
+          <input type="radio" class="filter__radio" value="نو" name="status" id="new" />
+          <label for="used">کارکرده</label>
+          <input type="radio" class="filter__radio" value="کارکرده" name="status" id="used" />
         </div>
-
-        <form method="get" class="header__search">
-            <input type="image" src="icon/public/search.svg" alt="Search" class="header__search__icon" />
-            <input type="search" placeholder="عبارت مورد نظر را وارد کنید" class="header__search__bar" />
-        </form>
-
-        <div class="header__menu">
-            <img src="icon/public/hamburger.png" alt="menu" class="header__menu__image">
+        <div class="filter__box">
+          <input type="text" class="filter__input" placeholder="از سال" />
+          <input type="text" class="filter__input" placeholder="تا سال" />
         </div>
-
-        <div class="header__fade"></div>
-        <nav class="header__navigation">
-            <ul class="header__list">
-                <li class="header__list__item">
-                    <a href="index.html">صفحه اصلی</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="login.html">ورود / ثبت نام</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="products.html">محصولات</a>
-                </li>
-                <li class="header__list__item">
-                    <a href="about.html">درباره ما</a>
-                </li>
-                <li class="header__list__item">
-                    <input id="check" type="checkbox">
-                    <label class="mode__click" for="check"></label>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <article class="container light">
-            <section class="content">
-                <h2 class="content__title">لیست محصولات</h2>
-            </section>
-        </article>
-
-        <aside class="sidebar light">
-            <section class="content">
-                <h2 class="content__title">فیلتر بر اساس</h2>
-                <select class="filter">
-                    <option class="filter__option">نوع</option>
-                    <option value="لوکس" class="filter__option">لوکس</option>
-                    <option value="اسپرت" class="filter__option">اسپرت</option>
-                    <option value="کلاسیک" class="filter__option">کلاسیک</option>
-                    <option value="رالی" class="filter__option">رالی</option>
-                    <option value="شخصی" class="filter__option">شخصی</option>
-                </select>
-                <div class="filter__box">
-                    <label for="new">نو</label>
-                    <input type="radio" class="filter__radio" value="نو" name="status" id="new" />
-                    <label for="used">کارکرده</label>
-                    <input type="radio" class="filter__radio" value="کارکرده" name="status" id="used" />
-                </div>
-                <div class="filter__box">
-                    <input type="text" class="filter__input" placeholder="از سال" />
-                    <input type="text" class="filter__input" placeholder="تا سال" />
-                </div>
-                <div class="filter__box">
-                    <label for="adoptive">حذف توافقی ها</label>
-                    <input type="checkbox" class="filter__check" value="توافقی" id="adoptive" />
-                </div>
-                <div class="filter__box">
-                    <label for="available">فقط کالا های موجود</label>
-                    <input type="checkbox" class="filter__check" id="available" />
-                </div>
-            </section>
-        </aside>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__copyright">
-            <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
+        <div class="filter__box">
+          <label for="adoptive">حذف توافقی ها</label>
+          <input type="checkbox" class="filter__check" value="توافقی" id="adoptive" />
         </div>
-        <div class="footer__icon">
-            <a href="https://github.com/EbrahimHeydari" title="GitHub">
-                <img src="icon/links/github.svg" alt="Git hub" class="icon" />
-            </a>
-            <a href="https://t.me/Heydari_2023" title="Telegram">
-                <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
-            </a>
-            <a href="https://www.linkedin.com" title="Linkedin">
-                <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
-            </a>
-            <a href="https://www.youtube.com" title="Youtube">
-                <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
-            </a>
+        <div class="filter__box">
+          <label for="available">فقط کالا های موجود</label>
+          <input type="checkbox" class="filter__check" id="available" />
         </div>
-    </footer>
+      </section>
+    </aside>
+  </main>
 
-    <script src="js/main.js"></script>
-    <script src="js/products.js"></script>
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به نمایشگاه ماموت می باشد &copy;</p>
+    </div>
+    <div class="footer__icon">
+      <a href="https://github.com/EbrahimHeydari" title="GitHub">
+        <img src="icon/links/github.svg" alt="Git hub" class="icon" />
+      </a>
+      <a href="https://t.me/Heydari_2023" title="Telegram">
+        <img src="icon/links/telegram.svg" alt="Telegram" class="icon" />
+      </a>
+      <a href="https://www.linkedin.com" title="Linkedin">
+        <img src="icon/links/linkedin.svg" alt="Linkedin" class="icon" />
+      </a>
+      <a href="https://www.youtube.com" title="Youtube">
+        <img src="icon/links/youtube.svg" alt="Youtube" class="icon" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
 </body>
 
 </html>
