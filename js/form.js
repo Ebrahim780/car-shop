@@ -1,6 +1,6 @@
 const login = document.querySelector('.login')
 const signup = document.querySelector('.signup')
-const form = document.querySelector('.form')
+const form = document.querySelector('.login__form')
 const inputs = form.querySelectorAll('input')
 
 const switchForm = (show, hide) => {
