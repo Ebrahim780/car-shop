@@ -13,6 +13,8 @@
     color: #00b1e7;
 }
 
+
+/* change mode buttom */
 #check {
     position: absolute;
     visibility: hidden;

@@ -246,14 +246,14 @@ h3.content__title {
 }
 
 .button:hover {
-    background: #005169cc;
+    opacity: 0.8;
 }
 
 .button:active {
     color: #005169;
     transform: scale(.95);
     border: 1px solid currentColor;
-    background-color: #efefef;
+    background-color: transparent;
 }
 
 
