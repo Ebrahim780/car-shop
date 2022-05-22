@@ -3,12 +3,12 @@ const mobile = document.querySelector('.header__navigation')
 const check = document.getElementById('check')
 const fade = document.querySelector('.header__fade')
 
+let mode = false
 let modeStatus = JSON.parse(localStorage.getItem('mode'))
 
 const changeMode = () => {
   let lights = document.querySelectorAll('.light')
   let lightens = document.querySelectorAll('.lighten')
-  let mode = false
 
   for (let light of lights)
     light.classList.toggle('dark')
