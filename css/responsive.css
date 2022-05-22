@@ -1,5 +1,5 @@
 @media screen and (max-width: 575px) {
-  .form {
+  .login__form {
     width: 100%;
   }
 
@@ -25,7 +25,7 @@
     margin: 10px;
   }
 
-  .form {
+  .login__form {
     width: 90%;
     margin: 20px auto;
   }
@@ -86,7 +86,7 @@
     margin: 10px;
   }
 
-  .form {
+  .login__form {
     margin: 30px auto;
   }
 
