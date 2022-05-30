@@ -6,6 +6,8 @@ const select = document.querySelector('select')
 const radios = document.querySelectorAll('.filter__radio')
 const inputs = document.querySelectorAll('.filter__input')
 const checks = document.querySelectorAll('.filter__check')
+
+localStorage.setItem('items', JSON.stringify([]))
 let orderList = JSON.parse(localStorage.getItem('items'))
 
 const order = id => {
