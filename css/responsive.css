@@ -3,11 +3,11 @@
     width: 100%;
   }
 
-  .product {
+  .card {
     width: 90%;
   }
 
-  .product__image {
+  .card__image {
     height: 250px;
   }
 
@@ -30,7 +30,7 @@
     margin: 20px auto;
   }
 
-  .product {
+  .card {
     width: 45%;
   }
 

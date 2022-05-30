@@ -257,6 +257,22 @@ h3.content__title {
   background-color: transparent;
 }
 
+.button__danger {
+  background-color: #dc143c;
+}
+
+.button__danger:active {
+  color: #dc143c;
+}
+
+.button__success {
+  background-color: #2d8330;
+}
+
+.button__success:active {
+  color: #2d8330;
+}
+
 
 /* footer */
 .footer {
