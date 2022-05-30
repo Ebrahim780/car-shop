@@ -7,8 +7,10 @@ const radios = document.querySelectorAll('.filter__radio')
 const inputs = document.querySelectorAll('.filter__input')
 const checks = document.querySelectorAll('.filter__check')
 
-let orderList = []
-orderList = JSON.parse(localStorage.getItem('items'))
+let orderList = JSON.parse(localStorage.getItem('items'))
+
+if (orderList == null)
+  orderList = []
 localStorage.setItem('items', JSON.stringify(orderList))
 
 const order = id => {

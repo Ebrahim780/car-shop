@@ -4,6 +4,9 @@ document.querySelector('.content').append(div)
 
 let orderList = JSON.parse(localStorage.getItem('items'))
 
+if (orderList == null)
+  orderList = []
+
 const showCart = () => {
   fetch('js/data.json')
     .then(res => res.json())
