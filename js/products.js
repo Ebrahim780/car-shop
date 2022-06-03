@@ -7,8 +7,8 @@ const radios = document.querySelectorAll('.filter__radio')
 const inputs = document.querySelectorAll('.filter__input')
 const checks = document.querySelectorAll('.filter__check')
 
-let orderList = JSON.parse(localStorage.getItem('items'))
 
+let orderList = JSON.parse(localStorage.getItem('items'))
 if (orderList == null)
   orderList = []
 localStorage.setItem('items', JSON.stringify(orderList))
@@ -18,6 +18,10 @@ const order = id => {
     orderList.push(id)
   localStorage.setItem('items', JSON.stringify(orderList))
 }
+
+
+let fromYear
+let toYear
 
 const filterProducts = (value, key) => {
   let filteredValue = null
@@ -35,11 +39,19 @@ const filterProducts = (value, key) => {
           break
 
         case 'fromYear':
-          filteredValue = products.filter(product => product.year >= value)
+          if (toYear)
+            filteredValue = products.filter(product => product.year >= value && product.year <= toYear)
+          else
+            filteredValue = products.filter(product => product.year >= value)
+          fromYear = value
           break
 
         case 'toYear':
-          filteredValue = products.filter(product => product.year <= value)
+          if (fromYear)
+            filteredValue = products.filter(product => product.year <= value && product.year >= fromYear)
+          else
+            filteredValue = products.filter(product => product.year <= value)
+          toYear = value
           break
 
         case 'noneAdopted':
@@ -91,12 +103,12 @@ const filterProducts = (value, key) => {
 }
 
 filterProducts()
+
 select.onchange = event => filterProducts(event.target.value, 'category')
 radios[0].onchange = event => filterProducts(event.target.value, 'status')
 radios[1].onchange = event => filterProducts(event.target.value, 'status')
-// TODO fix box
-inputs[0].onchange = event => filterProducts(event.target.value, 'fromYear')
-inputs[1].onchange = event => filterProducts(event.target.value, 'toYear')
+inputs[0].onblur = event => filterProducts(event.target.value, 'fromYear')
+inputs[1].onblur = event => filterProducts(event.target.value, 'toYear')
 // TODO fix box
 checks[0].onchange = event => filterProducts(event.target.value, 'noneAdopted')
 checks[1].onchange = () => filterProducts(null, 'available')
