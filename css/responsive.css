@@ -67,7 +67,8 @@
   }
 
   .header__logo__image {
-    width: 100px;
+    width: 60px;
+    margin: 10px;
   }
 
   .header__search__bar {
@@ -127,7 +128,8 @@
   }
 
   .header__logo__image {
-    width: 120px;
+    width: 80px;
+    margin: 10px;
   }
 
   .header__search__bar {
@@ -198,6 +200,7 @@
 
   .header__logo__image {
     width: 100px;
+    margin: 10px;
   }
 
   .header__search__bar {

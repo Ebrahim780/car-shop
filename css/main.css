@@ -94,8 +94,7 @@ textarea {
 }
 
 .header__logo__image {
-  width: 80px;
-  filter: invert(1);
+  width: 50px;
 }
 
 .header__search {
