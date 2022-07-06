@@ -26,7 +26,7 @@ let toYear
 const filterProducts = (value, key) => {
   let filteredValue = null
 
-  fetch('js/data.json')
+  fetch('server/data.json')
     .then(Response => Response.json())
     .then(products => {
       switch (key) {

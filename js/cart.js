@@ -8,7 +8,7 @@ if (orderList == null)
   orderList = []
 
 const showCart = () => {
-  fetch('js/data.json')
+  fetch('server/data.json')
     .then(res => res.json())
     .then(products => {
       div.innerHTML = ''
