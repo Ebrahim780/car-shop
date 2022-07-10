@@ -66,6 +66,10 @@ textarea {
   transition: .5s ease;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
 input:focus:not(.header__search__icon),
 textarea:focus {
   box-shadow: 0 0 10px #fefefe;

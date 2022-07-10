@@ -6,6 +6,7 @@ const select = document.querySelector('select')
 const radios = document.querySelectorAll('.filter__radio')
 const inputs = document.querySelectorAll('.filter__input')
 const checks = document.querySelectorAll('.filter__check')
+const search = document.querySelector('.header__search__bar')
 
 
 let orderList = JSON.parse(localStorage.getItem('items'))
@@ -62,6 +63,11 @@ const filterProducts = (value, key) => {
           filteredValue = products.filter(product => product.available == true)
           break
 
+        case 'search':
+          value = value.toLowerCase()
+          filteredValue = products.filter(product => product.name.toLowerCase().includes(value))
+          break
+
         default:
           filteredValue = products
       }
@@ -104,6 +110,7 @@ const filterProducts = (value, key) => {
 
 filterProducts()
 
+search.onchange = event => filterProducts(event.target.value, 'search')
 select.onchange = event => filterProducts(event.target.value, 'category')
 radios[0].onchange = event => filterProducts(event.target.value, 'status')
 radios[1].onchange = event => filterProducts(event.target.value, 'status')
