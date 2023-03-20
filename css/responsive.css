@@ -1,4 +1,10 @@
 @media screen and (max-width: 575px) {
+
+  /* Main */
+  .sidebar {
+    position: static;
+  }
+
   .login__form {
     width: 100%;
   }
@@ -43,6 +49,10 @@
   .container,
   .sidebar {
     margin: 10px;
+  }
+
+  .sidebar {
+    position: static;
   }
 
   .login__form {

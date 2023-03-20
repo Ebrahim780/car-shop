@@ -8,75 +8,75 @@ const inputs = document.querySelectorAll('.filter__input')
 const checks = document.querySelectorAll('.filter__check')
 const search = document.querySelector('.header__search__bar')
 
-
 let orderList = JSON.parse(localStorage.getItem('items'))
-if (orderList == null)
-  orderList = []
+if (orderList == null) orderList = []
 localStorage.setItem('items', JSON.stringify(orderList))
 
 const order = id => {
-  if (!orderList.includes(id))
-    orderList.push(id)
-  localStorage.setItem('items', JSON.stringify(orderList))
+	if (!orderList.includes(id)) orderList.push(id)
+	localStorage.setItem('items', JSON.stringify(orderList))
 }
-
 
 let fromYear
 let toYear
 
 const filterProducts = (value, key) => {
-  let filteredValue = null
+	let filteredValue = null
 
-  fetch('server/data.json')
-    .then(Response => Response.json())
-    .then(products => {
-      switch (key) {
-        case 'category':
-          filteredValue = products.filter(product => product.category === value)
-          break
+	fetch('../server/data.json')
+		.then(Response => Response.json())
+		.then(products => {
+			switch (key) {
+				case 'category':
+					filteredValue = products.filter(product => product.category === value)
+					break
 
-        case 'status':
-          filteredValue = products.filter(product => product.status === value)
-          break
+				case 'status':
+					filteredValue = products.filter(product => product.status === value)
+					break
 
-        case 'fromYear':
-          if (toYear)
-            filteredValue = products.filter(product => product.year >= value && product.year <= toYear)
-          else
-            filteredValue = products.filter(product => product.year >= value)
-          fromYear = value
-          break
+				case 'fromYear':
+					if (toYear)
+						filteredValue = products.filter(
+							product => product.year >= value && product.year <= toYear
+						)
+					else filteredValue = products.filter(product => product.year >= value)
+					fromYear = value
+					break
 
-        case 'toYear':
-          if (fromYear)
-            filteredValue = products.filter(product => product.year <= value && product.year >= fromYear)
-          else
-            filteredValue = products.filter(product => product.year <= value)
-          toYear = value
-          break
+				case 'toYear':
+					if (fromYear)
+						filteredValue = products.filter(
+							product => product.year <= value && product.year >= fromYear
+						)
+					else filteredValue = products.filter(product => product.year <= value)
+					toYear = value
+					break
 
-        case 'noneAdopted':
-          filteredValue = products.filter(product => product.price != value)
-          break
+				case 'noneAdopted':
+					filteredValue = products.filter(product => product.price != value)
+					break
 
-        case 'available':
-          filteredValue = products.filter(product => product.available == true)
-          break
+				case 'available':
+					filteredValue = products.filter(product => product.available == true)
+					break
 
-        case 'search':
-          value = value.toLowerCase()
-          filteredValue = products.filter(product => product.name.toLowerCase().includes(value))
-          break
+				case 'search':
+					value = value.toLowerCase()
+					filteredValue = products.filter(product =>
+						product.name.toLowerCase().includes(value)
+					)
+					break
 
-        default:
-          filteredValue = products
-      }
+				default:
+					filteredValue = products
+			}
 
-      div.innerHTML = ''
-      filteredValue.map(product => {
-        div.innerHTML += `
+			div.innerHTML = ''
+			filteredValue.map(product => {
+				div.innerHTML += `
         <div class='card'>
-          <img src='${product.url}' class='card__image' />
+          <img src='../${product.url}' class='card__image' loading='lazy' />
           <div class='card__content'>
             <span>نام: </span>
             <span>${product.name}</span>
@@ -104,8 +104,8 @@ const filterProducts = (value, key) => {
           <button class='button' onclick="order(${product.id})">سفارش</button>
         </div>
         `
-      })
-    })
+			})
+		})
 }
 
 filterProducts()
