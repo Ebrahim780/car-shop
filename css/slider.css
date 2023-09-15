@@ -6,16 +6,19 @@
 .slideshow {
   display: flex;
   align-items: center;
-  overflow: hidden;
   width: 100%;
   overflow: auto;
   height: 350px;
   margin-bottom: 40px;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 10px;
 }
 
 .slide {
   position: relative;
   margin: 0 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .slide__overlay {
