@@ -87,9 +87,25 @@ textarea {
   display: grid;
   justify-content: space-between;
   grid-template: "hamburger logo" "search search" "list list" / 1fr 1fr;
+  position: relative;
   background: #005169 url('../image/41.jpg') center;
   background-blend-mode: hard-light;
   background-size: cover;
+}
+
+/* blur header background */
+.header::after {
+  content: '';
+  backdrop-filter: blur(3px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.header>* {
+  position: relative;
+  z-index: 1;
 }
 
 .header__logo {
@@ -287,7 +303,7 @@ h3.content__title {
   grid-template: "icons" "copyright";
   padding: 1rem 2rem;
   color: #fff;
-  background: #005169 url('../image/42.jpg') bottom;
+  background: #005169 url('../image/41.jpg') bottom;
   background-blend-mode: hard-light;
   background-size: cover;
 }
