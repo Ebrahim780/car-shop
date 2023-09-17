@@ -76,7 +76,7 @@ const filterProducts = (value, key) => {
 			filteredValue.map(product => {
 				div.innerHTML += `
         <div class='card'>
-          <img src='../${product.url}' class='card__image' loading='lazy' />
+          <img src='../${product.url}' class='card__image' loading='lazy' alt=${product.name} />
           <div class='card__content'>
             <span>نام: </span>
             <span>${product.name}</span>
