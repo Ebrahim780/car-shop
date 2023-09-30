@@ -58,7 +58,7 @@
   justify-content: center;
   margin-bottom: 15px !important;
   position: relative;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .form__box__input {

@@ -182,7 +182,7 @@
   /* main */
   .main {
     width: 80%;
-    margin: 0 auto;
+    margin-inline: auto;
     grid-template: "container container sidebar"
       "container container ...."/ 1fr 1fr 1fr;
 
@@ -261,7 +261,7 @@
   /* main */
   .main {
     width: 60%;
-    margin: 0 auto;
+    margin-inline: auto;
     grid-template: "container container sidebar"
       "container container ...."/ 1fr 1fr 1fr;
   }
