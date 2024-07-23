@@ -21,7 +21,7 @@ const changeMode = () => {
   localStorage.setItem('mode', JSON.stringify(mode))
 }
 
-if (modeStatus) {
+if (modeStatus === 'dark') {
   check.click()
   changeMode()
 }
